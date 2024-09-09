@@ -1,6 +1,7 @@
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
+        if(nums.size()==0)return 0;
         sort(nums.begin(),nums.end());
         nums.resize(unique(nums.begin(),nums.end()) -nums.begin());
         int count=1,tmp=1;
