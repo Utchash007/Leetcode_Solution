@@ -7,7 +7,7 @@ public:
             if(!st[i]){for(int j=i+i; j<=n; j+=i)st[j]=1;}
         }
         int x=0;
-        for(int i=2; i<n; i++)if(st[i])++x;
+        for(int i=2; i<n; i++)if(!st[i])++x;
         return x;
     }
 };
