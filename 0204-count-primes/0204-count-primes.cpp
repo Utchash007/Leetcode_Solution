@@ -11,3 +11,9 @@ public:
         return x;
     }
 };
+
+auto boom = []() -> int {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    return 0;
+}();
