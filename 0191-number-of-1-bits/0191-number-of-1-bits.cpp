@@ -1,7 +1,6 @@
 class Solution {
 public:
-    int hammingWeight(uint32_t n) {
-        int setBits = __builtin_popcount(n);
-        return setBits;
+    int hammingWeight(int n) {
+        return __builtin_popcount(n);
     }
 };
